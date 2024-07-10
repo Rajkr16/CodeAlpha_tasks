@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Book Library</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>My Book Library</h1>
+        <input type="text" id="searchBar" placeholder="Search for a book...">
+    </header>
+    <main>
+        <div id="bookList"></div>
+        <div id="bookDetails" class="hidden">
+            <h2>Book Details</h2>
+            <p id="bookTitle"></p>
+            <p id="bookAuthor"></p>
+            <p id="bookCategory"></p>
+            <p id="bookStatus"></p>
+            <input type="text" id="borrowerName" placeholder="Enter your name">
+            <button id="borrowButton">Borrow</button>
+            <button id="returnButton" class="hidden">Return</button>
+            <button id="removeButton">Remove</button>
+            <button id="viewHistoryButton">View Borrowing History</button>
+        </div>
+        <div id="borrowingHistory" class="hidden">
+            <h2>Borrowing History</h2>
+            <ul id="historyList"></ul>
+        </div>
+        <div id="addBookForm">
+            <h2>Add a New Book</h2>
+            <input type="text" id="newBookTitle" placeholder="Title">
+            <input type="text" id="newBookAuthor" placeholder="Author">
+            <input type="text" id="newBookCategory" placeholder="Category">
+            <button id="addBookButton">Add Book</button>
+        </div>
+    </main>
+    <script src="app.js"></script>
+</body>
+</html>
